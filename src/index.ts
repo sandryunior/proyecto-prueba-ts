@@ -1,39 +1,18 @@
-var a = 21
-let b: string | number = "hola mundo"
+import Avion, { Color } from "./models/Avion"
+import { Coche, Moto } from "./models/tipos"
 
-a.toFixed(2)
-b.length
-
-//@ts-ignore
-b = true
-b = [1, 2, true, "hola"]
-/*
-
-    let c: boolean = true
-    c = 45
-
-*/
-
-const variable = true
-
-function suma(a: number, b: unknown) {
-    if (typeof b !== "number") return "hello"
-    return a + b
+const miAvion: Avion = {
+    marca: "Boeing",
+    numPasajeros: 140,
+    aerolinea: {
+        nombre: "Iberia",
+        pais: "España",
+        fecha: new Date()
+    },
+    color: "Azul"
 }
 
-suma(10, 5) // 15
-suma("10", 5) // "105"
-
-
-let minumero = 5
-
-let miArrayDeNumeros: number[] = [1, 2, 3, 4, 5]
-
-miArrayDeNumeros.push(12)
-miArrayDeNumeros.push("Hola")
-
-let miArrayDeStrings: string[] = []
-
-
-miArrayDeStrings[0] = "hola"
-miArrayDeStrings.push(true)
+type Bicicleta = {
+    tamaño: number,
+    color: Color
+}
