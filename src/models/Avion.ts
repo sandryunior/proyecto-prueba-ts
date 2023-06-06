@@ -4,20 +4,32 @@ type Aerolinea = {
     fecha: Date
 }
 
-type Color = "Rojo" | "Azul" | "Blanco" | "Negro"
-
 type Verdadero = true
 
-type Avion = {
-    marca: string,
-    numPasajeros: number,
-    aerolinea: Aerolinea,
-    color: Color
+type Color = "Rojo" | "Azul" | "Blanco" | "Negro"
+
+enum Colores {
+    Rojo = 2,
+    Azul = "Azul",
+    Blanco = "Blanco",
+    Negro = "Negro"
 }
 
-// interface Avion {
+Colores.Azul
 
+// type Avion = {
+//     marca: string,
+//     numPasajeros: number,
+//     aerolinea: Aerolinea,
+//     color: Color
 // }
+
+interface Avion {
+    marca: string
+    numPasajeros: number
+    aerolinea: Aerolinea
+    color: Color
+}
 
 export { Color, Aerolinea } // Exportaciones adicionales
 

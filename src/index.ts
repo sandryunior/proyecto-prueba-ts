@@ -1,18 +1,11 @@
-import Avion, { Color } from "./models/Avion"
-import { Coche, Moto } from "./models/tipos"
+// var figlet = require("figlet");
+import figlet from "figlet"
 
-const miAvion: Avion = {
-    marca: "Boeing",
-    numPasajeros: 140,
-    aerolinea: {
-        nombre: "Iberia",
-        pais: "España",
-        fecha: new Date()
-    },
-    color: "Azul"
-}
-
-type Bicicleta = {
-    tamaño: number,
-    color: Color
-}
+figlet("Hello World!!", function (err, data) {
+  if (err) {
+    console.log("Something went wrong...");
+    console.dir(err);
+    return;
+  }
+  console.log(data);
+});
