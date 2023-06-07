@@ -12,4 +12,22 @@ function obtenerArea(forma) {
     return base ** altura;
 }
 console.log(obtenerArea(miForma));
+const alumnos = [{
+        nombre: "Gorka",
+        edad: 25
+    }, {
+        nombre: "Aitor",
+        edad: 22
+    }, {
+        nombre: "Alvar",
+        edad: 25
+    }];
+console.log(alumnos);
+console.table(alumnos);
+console.error("Esto es un error");
+console.time("timer");
+for (let i = 0; i < 123456; i++) {
+    let a = 0;
+}
+console.timeEnd("timer");
 //# sourceMappingURL=index.js.map
