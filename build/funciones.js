@@ -10,5 +10,4 @@ const obtenRectangulo = (base, altura) => ({
     superficie: base * altura
 });
 const miRectangulo = obtenRectangulo(10, 20);
-console.log(miRectangulo.superficie);
 //# sourceMappingURL=funciones.js.map
